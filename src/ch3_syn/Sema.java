@@ -40,8 +40,8 @@ public class Sema {
 
     public static void main(String[] args) {
         //스레드 생성
-        Thread thread1 = new Thread(new RaceCondition.Increment());
-        Thread thread2 = new Thread(new RaceCondition.Decrement());
+        Thread thread1 = new Thread(new Increment());
+        Thread thread2 = new Thread(new Decrement());
 
         //스레드 시작
         thread1.start();
